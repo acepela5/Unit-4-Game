@@ -4,7 +4,7 @@
     width: 150px;
     position: relative;
     left: 600px;
-    top: -1000px;
+    top: -1400px;
     color: white;
     text-align: center;
     padding: 3px;
@@ -16,7 +16,7 @@
     width: 156px;
     position: relative;
     left: 600px;
-    top: -990px;
+    top: -1390px;
 }
 
 #scoreBoardTitle {
@@ -25,7 +25,7 @@
     width: 150px;
     position: relative;
     left: 805px;
-    top: -1175px;
+    top: -1576px;
     color: white;
     text-align: center;
     padding: 3px;
@@ -37,7 +37,7 @@
     width: 156px;
     position: relative;
     left: 805px;
-    top: -1165px;
+    top: -1565px;
 }
 
 #userScoreTitle {
@@ -46,7 +46,7 @@
     width: 150px;
     position: relative;
     left: 1010px;
-    top: -1350px;
+    top: -1755px;
     color: white;
     text-align: center;
     padding: 3px;
@@ -58,21 +58,40 @@
     width: 156px;
     position: relative;
     left: 1010px;
-    top: -1340px;
+    top: -1740px;
 }
 
 body {
-    height: 590px;
+    background-image: url(../images/butterfly.JPG);
+    background-repeat: repeat;
+    background-size: 100% 35%;
+    
 }
 
 #madHatter {
     position: relative;
-    left: 200px;
-    top: -350px;
+    left: 230px;
+    top: -270px;
+    height: 500px;
 }
 
 #whiteRabbit {
     position: relative;
-    left: 240px;
-    top: -350px;
+    left: 400px;
+    top: -240px;
+    height: 500px;
+}
+
+#queenOfHearts {
+    position: relative;
+    left: 680px;
+    top: -740px;
+    height: 500px;
+}
+
+#mouseTea {
+    position: relative;
+    left: -100px;
+    top: -760px;
+    height: 500px;
 }
