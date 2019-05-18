@@ -1,93 +1,84 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  // variable declaration
 
+  var winsCounter = 0; // is global for all the games
 
-    // var declaration
+  var lossesCounter = 0; // is global for all the games
 
-    var winsCounter = 0;    // is global for all the games
+  var computerNumber = 0; // this is relate always with the current game
 
-    var lossesCounter = 0;  // is global for all the games
+  var userCounter = 0; // this is relate always with the current game
 
-    var computerNumber = 0  // this is relate always with the current game
+  /////////image array
+  var image1 = "./assetts/images/madHatter.png";
+  var image2 = "./assetts/images/queenOfHearts.png";
+  var image3 = "./assetts/images/mouseTea.png";
+  var image4 = "./assetts/images/whiteRabbit.png";
+  var imageArray = [image1, image2, image3, image4];
 
-    var userCounter = 0;     // this is relate always with the current game
-
-    /////////
-
-
-function calculateComputer(){
-    computerNumber=Math.floor(Math.random() * 101) + 19;
+//   creates random number for the computer
+  function calculateComputer() {
+    computerNumber = Math.floor(Math.random() * 101) + 19;
     $("#computerNumberBox").text(computerNumber);
-}
+    console.log(computerNumber);
+  }
 
-
-
-    /////
-
-
-    /// this is going to be values for the stones and 
-    var image1 = "./assetts/images/madHatter.png"
-    var image2 = "./assetts/images/queenOfHearts.png"
-    var image3 = "./assetts/images/mouseTea.png"
-    var image4 = "./assetts/images/whiteRabbit.png"
-    var imageArray = [image1, image2, image3, image4]
-
-
-    var imageValues = [Math.floor(Math.random() * 11) + 1, Math.floor(Math.random() * 11) + 1,Math.floor(Math.random() * 11) + 1, Math.floor(Math.random() * 11) + 1,];
+//   creates a random number and attaches it to an image in the array
+  function prepareMyImages() {
+    var imageValues = [
+      Math.floor(Math.random() * 11) + 1,
+      Math.floor(Math.random() * 11) + 1,
+      Math.floor(Math.random() * 11) + 1,
+      Math.floor(Math.random() * 11) + 1
+    ];
+    console.log(imageValues);
+        
 
     for (var i = 0; i < imageArray.length; i++) {
-
-        var imagesWithNumbers = $("<img>");
-        imagesWithNumbers.addClass("images-with-numbers");
-        imagesWithNumbers.attr("src",  imageArray[i]);
-        imagesWithNumbers.attr("data-value", imageValues[i] )
-        $("#myImages").append(imagesWithNumbers)
+      var imagesWithNumbers = $("<img>");
+      imagesWithNumbers.addClass("images-with-numbers");
+      imagesWithNumbers.attr("src", imageArray[i]);
+      imagesWithNumbers.attr("data-value", imageValues [i] );
+      $("#myImages").append(imagesWithNumbers);
     }
+  
+    // when images are clicked they send a random number   the console log
     $(".images-with-numbers").on("click", function() {
-        var valueImageClicked = $(this).attr("data-value")
-        console.log("valueImageClicked: ", valueImageClicked)
+      var valueImageClicked = $(this).attr("data-value");
+      valueImageClicked = parseInt(valueImageClicked);
 
-        console.log("urlimageclicked: ", $(this).attr("src"))
+      console.log("valueImageClicked: ", valueImageClicked);
 
+      console.log("urlimageclicked: ", $(this).attr("src"));
+// the counter increase based on the value of the picture clicked
+
+      $("#userScoreBox").text(userCounter += valueImageClicked);
+
+
+      if (userCounter === computerNumber) {
+        alert("You win" + winsCounter++);
+        $("#scoreBoardBox").text("Wins: " + winsCounter);
+        game();
+    } 
+      else if (userCounter > computerNumber) {
+        alert("You lost" + lossesCounter++);
+        $("#scoreBoardBox").text("Losses: " + lossesCounter);
+        game();
+      }
     })
-
-
-
-
-//         $("#madHatter").on("click", function(){
-//             alert(userPossibleNumbers)
-//         });
+ 
     
-//         $("#whiteRabbit").on("click", function(){
-//             alert("This picture!")
-//         });
+    }
+        function game(){
+        // reset the counters
+        computerNumber = Math.floor(Math.random() * 101) + 19;
+    $("#computerNumberBox").text(computerNumber);
+        //call my functions
+        userCounter = 0;
+        };
     
-//         $("#queenOfHearts").on("click", function(){
-//             alert("This picture is!")
-//         });
-    
-//         $("#mouseTea").on("click", function(){
-//             alert("This picture is working!")
-//         });
-
-//         if (userCounter === computerNumber) {
-//             alert("You win" + winsCounter ++);
-//         }
-//         else if (userCounter >= computerNumber) {
-//             alert("You loose" + lossesCounter ++);
-//         }
-//     }
-
+  
+  calculateComputer ();
+  prepareMyImages();
+  game();
 });
-
-
-// var computerNumberDiv = document.getElementById("computerNumberBox");
-// var computerNumberDiv = $("#computerNumberBox")
-
-
-// var winsDiv = document.getElementById("scoreBoardBox");
-
-
-// var lossesDiv = document.getElementById("scoreBoardBox");
-
-
-// var userNumberDiv = document.getElementById("userScoreBox");

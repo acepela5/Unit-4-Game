@@ -3,8 +3,8 @@
     height: 20px;
     width: 150px;
     position: relative;
-    left: 600px;
-    top: -1400px;
+    /* left: 600px;
+    top: -1400px; */
     color: white;
     text-align: center;
     padding: 3px;
@@ -15,8 +15,8 @@
     height: 150px;
     width: 156px;
     position: relative;
-    left: 600px;
-    top: -1390px;
+    /* left: 600px;
+    top: -1390px; */
 }
 
 #scoreBoardTitle {
@@ -24,8 +24,8 @@
     height: 20px;
     width: 150px;
     position: relative;
-    left: 805px;
-    top: -1576px;
+    /* left: 805px;
+    top: -1576px; */
     color: white;
     text-align: center;
     padding: 3px;
@@ -36,8 +36,8 @@
     height: 150px;
     width: 156px;
     position: relative;
-    left: 805px;
-    top: -1565px;
+    /* left: 805px;
+    top: -1565px; */
 }
 
 #userScoreTitle {
@@ -45,8 +45,8 @@
     height: 20px;
     width: 150px;
     position: relative;
-    left: 1010px;
-    top: -1755px;
+    /* left: 1010px;
+    top: -1755px; */
     color: white;
     text-align: center;
     padding: 3px;
@@ -57,8 +57,8 @@
     height: 150px;
     width: 156px;
     position: relative;
-    left: 1010px;
-    top: -1740px;
+    /* left: 1010px;
+    top: -1740px; */
 }
 
 body {
