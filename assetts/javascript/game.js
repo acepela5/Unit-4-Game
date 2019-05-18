@@ -11,10 +11,10 @@ $(document).ready(function() {
   var userCounter = 0; // this is relate always with the current game
 
   /////////image array
-  var image1 = "./assetts/images/madHatter.png";
-  var image2 = "./assetts/images/queenOfHearts.png";
-  var image3 = "./assetts/images/mouseTea.png";
-  var image4 = "./assetts/images/whiteRabbit.png";
+  var image1 = "./assetts/images/madHattersmall.png";
+  var image2 = "./assetts/images/queenOfHeartssmall.png";
+  var image3 = "./assetts/images/mouseTeasmall.png";
+  var image4 = "./assetts/images/whiteRabbitleftsmall.png";
   var imageArray = [image1, image2, image3, image4];
 
 //   creates random number for the computer
@@ -58,12 +58,12 @@ $(document).ready(function() {
 
       if (userCounter === computerNumber) {
         alert("You win" + " " + winsCounter++);
-        $("#scoreBoardBox").text("Wins: " + winsCounter);
+        $("#scoreBoardBox").html(`<p>Losses: ${lossesCounter}<p><p>Wins: ${winsCounter}<p>`);
         game();
     } 
       else if (userCounter > computerNumber) {
         alert("You lost" + " " + lossesCounter++);
-        $("#scoreBoardBox").text("Losses: " + lossesCounter);
+        $("#scoreBoardBox").html(`<p>Losses: ${lossesCounter}<p><p>Wins: ${winsCounter}<p>`);
         game();
       }
     })
@@ -76,6 +76,12 @@ $(document).ready(function() {
     $("#computerNumberBox").text(computerNumber);
         //call my functions
         userCounter = 0;
+        imageValues = [
+            Math.floor(Math.random() * 11) + 1,
+            Math.floor(Math.random() * 11) + 1,
+            Math.floor(Math.random() * 11) + 1,
+            Math.floor(Math.random() * 11) + 1
+          ];
         };
     
   

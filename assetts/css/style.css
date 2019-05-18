@@ -4,16 +4,22 @@
     /* top: -200px; */
     text-align: center;
     width: 200px;
+    height: 80px;
     line-height: 35px;
     color: #636482;
     background-color: #ebd9d5;
     border-radius: 5px;
     font-family: 'Stylish', sans-serif;
     font-size: 40px;
+    border: solid 1px #c88891;
+
 }
 
 #computerNumberBox {
-    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
     position: relative;
     /* left: 300px; */
     /* top: 20px; */
@@ -25,25 +31,30 @@
     border-radius: 5px;
     font-family: 'Stylish', sans-serif;
     font-size: 40px;
+    border: solid 1px #c88891;
 }
 
 #scoreBoardTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     /* left: 600px; */
     /* top: -145px; */
     text-align: center;
     width: 200px;
-    height: 70px;
+    height: 80px;
     line-height: 35px;
     color: #636482;
     background-color: #ebd9d5;
     border-radius: 5px;
     font-family: 'Stylish', sans-serif;
     font-size: 40px;
+    border: solid 1px #c88891;
 }
 
 #scoreBoardBox {
-    height: 75px;
+    height: 90px;
     position: relative;
     /* left: 600px; */
     /* top: -125px; */
@@ -55,6 +66,7 @@
     border-radius: 5px;
     font-family: 'Stylish', sans-serif;
     font-size: 40px;
+    border: solid 1px #c88891;
 }
 
 #userScoreTitle {
@@ -64,39 +76,45 @@
     /* top: -290px; */
     text-align: center;
     width: 200px;
-    line-height: 35px;
+    line-height: 30px;
     color: #636482;
     background-color: #ebd9d5;
     border-radius: 5px;
     font-family: 'Stylish', sans-serif;
     font-size: 40px;
+    margin-bottom: 10px;
+    border: solid 1px #c88891;
 }
 
 #userScoreBox {
-    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
     width: 200px;
     position: relative;
     /* left: 900px; */
     /* top: -275px; */
     text-align: center;
-    width: 200px;
     line-height: 35px;
     color: #636482;
     background-color: #ebd9d5;
     border-radius: 5px;
     font-family: 'Stylish', sans-serif;
     font-size: 40px;
+    border: solid 1px #c88891;
 }
 
 .container {
-    width: 960px;
+    width: 1000px;
+    height: 1800px;
 }
 
 body {
     background-image: url(../images/allflowers.jpg);
     background-repeat: no-repeat;
     background-size: 100% 35%;
-    height: 1800px;
+    max-height: 1800px;
     
 }
 
@@ -104,8 +122,9 @@ body {
     /* position: relative; */
     /* left: 230px; */
     /* top: 100px; */
-    height: 500px;
-    width: 500px;
+    height: 240px;
+    width: 240px;
+    padding-top: 20px;
 }
 
 #imagecontainer {
@@ -116,6 +135,7 @@ body {
     background-color: #ebd9d5;
     border-color: #c88891;
     color: #c88891;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -126,4 +146,5 @@ h1 {
     text-align: center;
     border-radius: 5px;
     font-size: 55px;
+    border: solid 1px #c88891;
 }
