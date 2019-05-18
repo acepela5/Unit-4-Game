@@ -1,97 +1,129 @@
 #computerNumberTitle {
-    background-color: blue;
-    height: 20px;
-    width: 150px;
     position: relative;
-    /* left: 600px;
-    top: -1400px; */
-    color: white;
+    /* left: 300px; */
+    /* top: -200px; */
     text-align: center;
-    padding: 3px;
+    width: 200px;
+    line-height: 35px;
+    color: #636482;
+    background-color: #ebd9d5;
+    border-radius: 5px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
 }
 
 #computerNumberBox {
-    background-color: blue;
-    height: 150px;
-    width: 156px;
+    height: 75px;
     position: relative;
-    /* left: 600px;
-    top: -1390px; */
+    /* left: 300px; */
+    /* top: 20px; */
+    text-align: center;
+    width: 200px;
+    line-height: 35px;
+    color: #636482;
+    background-color: #ebd9d5;
+    border-radius: 5px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
 }
 
 #scoreBoardTitle {
-    background-color: blueviolet;
-    height: 20px;
-    width: 150px;
     position: relative;
-    /* left: 805px;
-    top: -1576px; */
-    color: white;
+    /* left: 600px; */
+    /* top: -145px; */
     text-align: center;
-    padding: 3px;
+    width: 200px;
+    height: 70px;
+    line-height: 35px;
+    color: #636482;
+    background-color: #ebd9d5;
+    border-radius: 5px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
 }
 
 #scoreBoardBox {
-    background-color: blueviolet;
-    height: 150px;
-    width: 156px;
+    height: 75px;
     position: relative;
-    /* left: 805px;
-    top: -1565px; */
+    /* left: 600px; */
+    /* top: -125px; */
+    text-align: center;
+    width: 200px;
+    line-height: 35px;
+    color: #636482;
+    background-color: #ebd9d5;
+    border-radius: 5px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
 }
 
 #userScoreTitle {
-    background-color: violet;
-    height: 20px;
-    width: 150px;
+    height: 80px;
     position: relative;
-    /* left: 1010px;
-    top: -1755px; */
-    color: white;
+    /* left: 900px; */
+    /* top: -290px; */
     text-align: center;
-    padding: 3px;
+    width: 200px;
+    line-height: 35px;
+    color: #636482;
+    background-color: #ebd9d5;
+    border-radius: 5px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
 }
 
 #userScoreBox {
-    background-color: violet;
-    height: 150px;
-    width: 156px;
+    height: 75px;
+    width: 200px;
     position: relative;
-    /* left: 1010px;
-    top: -1740px; */
+    /* left: 900px; */
+    /* top: -275px; */
+    text-align: center;
+    width: 200px;
+    line-height: 35px;
+    color: #636482;
+    background-color: #ebd9d5;
+    border-radius: 5px;
+    font-family: 'Stylish', sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    width: 960px;
 }
 
 body {
-    background-image: url(../images/butterfly.JPG);
-    background-repeat: repeat;
+    background-image: url(../images/allflowers.jpg);
+    background-repeat: no-repeat;
     background-size: 100% 35%;
+    height: 1800px;
     
 }
 
-#madHatter {
-    position: relative;
-    left: 230px;
-    top: -270px;
+.images-with-numbers {
+    /* position: relative; */
+    /* left: 230px; */
+    /* top: 100px; */
     height: 500px;
+    width: 500px;
 }
 
-#whiteRabbit {
-    position: relative;
-    left: 400px;
-    top: -240px;
-    height: 500px;
+#imagecontainer {
+    height: 100px;
 }
 
-#queenOfHearts {
-    position: relative;
-    left: 680px;
-    top: -740px;
-    height: 500px;
+.btn {
+    background-color: #ebd9d5;
+    border-color: #c88891;
+    color: #c88891;
 }
 
-#mouseTea {
-    position: relative;
-    left: -100px;
-    top: -760px;
-    height: 500px;
+h1 {
+    font-family: 'Stylish', sans-serif;
+    color: #636482;
+    background-color: #ebd9d5; 
+    width: 450px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 55px;
 }

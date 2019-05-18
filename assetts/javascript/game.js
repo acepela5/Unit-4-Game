@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
   // variable declaration
 
   var winsCounter = 0; // is global for all the games
@@ -56,12 +57,12 @@ $(document).ready(function() {
 
 
       if (userCounter === computerNumber) {
-        alert("You win" + winsCounter++);
+        alert("You win" + " " + winsCounter++);
         $("#scoreBoardBox").text("Wins: " + winsCounter);
         game();
     } 
       else if (userCounter > computerNumber) {
-        alert("You lost" + lossesCounter++);
+        alert("You lost" + " " + lossesCounter++);
         $("#scoreBoardBox").text("Losses: " + lossesCounter);
         game();
       }
@@ -81,4 +82,6 @@ $(document).ready(function() {
   calculateComputer ();
   prepareMyImages();
   game();
+
+  
 });
