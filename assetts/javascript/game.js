@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 
       if (userCounter === computerNumber) {
-        alert("You win" + " " + winsCounter++);
+          alert("You win" + " " + winsCounter++);
         $("#scoreBoardBox").html(`<p>Losses: ${lossesCounter}<p><p>Wins: ${winsCounter}<p>`);
         game();
     } 
