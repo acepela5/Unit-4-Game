@@ -13,7 +13,7 @@ This short game is user versus computer. The computer gives each picture a rando
 ## Screenshot
 ---
 
-![ ](Screenshot(29).png)
+![](/Screenshot(34).png)
 
 
 ## Comments
