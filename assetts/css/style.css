@@ -1,7 +1,5 @@
 #computerNumberTitle {
     position: relative;
-    /* left: 300px; */
-    /* top: -200px; */
     text-align: center;
     width: 200px;
     height: 80px;
@@ -20,9 +18,7 @@
     align-items: center;
     justify-content: center;
     height: 90px;
-    position: relative;
-    /* left: 300px; */
-    /* top: 20px; */
+    position: absolute;
     text-align: center;
     width: 200px;
     line-height: 35px;
@@ -39,8 +35,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    /* left: 600px; */
-    /* top: -145px; */
     text-align: center;
     width: 200px;
     height: 80px;
@@ -55,9 +49,7 @@
 
 #scoreBoardBox {
     height: 90px;
-    position: relative;
-    /* left: 600px; */
-    /* top: -125px; */
+    position: absolute;
     text-align: center;
     width: 200px;
     line-height: 35px;
@@ -72,8 +64,6 @@
 #userScoreTitle {
     height: 80px;
     position: relative;
-    /* left: 900px; */
-    /* top: -290px; */
     text-align: center;
     width: 200px;
     line-height: 30px;
@@ -92,9 +82,7 @@
     justify-content: center;
     height: 90px;
     width: 200px;
-    position: relative;
-    /* left: 900px; */
-    /* top: -275px; */
+    position: absolute;
     text-align: center;
     line-height: 35px;
     color: #636482;
@@ -112,16 +100,12 @@
 
 body {
     background-image: url(../images/allflowers.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100% 35%;
-    max-height: 1800px;
-    
+    overflow-y: hidden;    
 }
 
 .images-with-numbers {
-    /* position: relative; */
-    /* left: 230px; */
-    /* top: 100px; */
     height: 240px;
     width: 240px;
     padding-top: 20px;
@@ -148,3 +132,18 @@ h1 {
     font-size: 55px;
     border: solid 1px #c88891;
 }
+
+@media screen and (max-width: 800px) {
+    #computerNumberBox {
+      left: 300px;
+      top: -260px;
+    }
+    #scoreBoardBox {
+    left: 300px;
+    top: -170px;
+    }
+    #userScoreBox {
+    left: 300px;
+    top: -80px;
+    }
+  }

@@ -14,8 +14,9 @@ $(document).ready(function() {
   var image1 = "./assetts/images/madHattersmall.png";
   var image2 = "./assetts/images/queenOfHeartssmall.png";
   var image3 = "./assetts/images/mouseTeasmall.png";
-  var image4 = "./assetts/images/whiteRabbitleftsmall.png";
+  var image4 = "./assetts/images/whiteRabbitLeftsmall.png";
   var imageArray = [image1, image2, image3, image4];
+
 
 //   creates random number for the computer
   function calculateComputer() {
@@ -42,6 +43,10 @@ $(document).ready(function() {
       imagesWithNumbers.attr("data-value", imageValues [i] );
       $("#myImages").append(imagesWithNumbers);
     }
+
+    $("#myImages").css("position","relative");
+    $("#myImages").css("top","100px");
+
   
     // when images are clicked they send a random number   the console log
     $(".images-with-numbers").on("click", function() {
