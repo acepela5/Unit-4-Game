@@ -147,3 +147,9 @@ h1 {
     top: -80px;
     }
   }
+
+@media screen and (max-width: 570px) {
+    #myImages {
+        width: 50%;
+    }
+}
