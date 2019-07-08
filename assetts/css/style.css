@@ -137,6 +137,9 @@ h1 {
     #myImages {
         width: 50%;
     }
+    body {
+        background-size: 200% 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
